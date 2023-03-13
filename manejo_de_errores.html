@@ -8,17 +8,17 @@
 </head>
 <body>
     <script>
-        `Apenas encuentre una falla se
-        detiene la ejecución del programa
-        `
-        try {
-            noExiste;
-            console.log("TRY");
-        } catch (error) {
-            console.log("CATCH");
-            console.log(error)
-        }finally {
-            console.log("FINALLY");
+        const numero = [1,2,3,4,5,6,7,8,9,0]
+        for (let i=0; i < numero.length; i++){
+            if (i===7){
+                break;
+            }
+            console.log(numero[i])
+        }for (let i=0; i < numero.length; i++){
+            if (i===7){
+                continue;
+            }
+            console.log(numero[i])
         }
     </script>
 </body>
