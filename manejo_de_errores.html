@@ -9,26 +9,11 @@
 <body>
     <script>
 
-function suma(a,b, ...c){
-    let resultado = a + b;
+const saludo = () => console.log("Saludar");
+const sumar = (a,b) => a+b
 
-    c.forEach(function(n){
-        resultado += n
-    });
-
-    return resultado;
-}
-
-console.log(suma(1, 2))
-
-const arra1 = [1,2,3,4,5],
-    arra2 = [6,7,8,9,0]
-
-console.log(arra1, arra2);
-
-const array3 = [...arra1, ...arra2];
-
-console.log(array3);
+saludo();
+console.log(sumar(8,9))
 
     </script>
 </body>
